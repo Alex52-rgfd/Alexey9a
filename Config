@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Искусственного Интеллекта</title>
+    <!-- Подключаем Tailwind CSS для стилей -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Подключаем шрифт Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Светло-серый фон */
+            color: #1e293b;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Навигация -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">AI Hub</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#what-is-ai" class="text-gray-600 hover:text-blue-600 transition">Что такое ИИ</a>
+                <a href="#applications" class="text-gray-600 hover:text-blue-600 transition">Применение</a>
+                <a href="#pros-cons" class="text-gray-600 hover:text-blue-600 transition">Плюсы и минусы</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Добро пожаловать в мир ИИ</h1>
+            <p class="text-lg md:text-xl opacity-90">Узнайте, как технологии меняют нашу жизнь, какие у них есть плюсы и какие вызовы стоят перед человечеством.</p>
+        </div>
+    </section>
+
+    <!-- Секция 1: Что такое ИИ -->
+    <section id="what-is-ai" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Что такое ИИ?</h2>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-12">
+            <p class="text-xl text-gray-700 leading-relaxed text-center italic">
+                «ИИ — это программы, которые учатся на данных и решают задачи, похожие на человеческие: распознают образы, понимают текст, принимают решения».
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Мини-глоссарий -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-gray-800 border-b pb-2">Мини-глоссарий</h3>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <span class="font-bold text-blue-600">Машинное обучение</span>
+                        <p class="text-gray-600 mt-1 text-sm">Метод, при котором программа учится на примерах, а не по жестким правилам.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <span class="font-bold text-blue-600">Нейросеть</span>
+                        <p class="text-gray-600 mt-1 text-sm">Математическая модель, вдохновленная работой мозга, которая находит сложные закономерности.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <span class="font-bold text-blue-600">Датасет</span>
+                        <p class="text-gray-600 mt-1 text-sm">Набор данных (тексты, картинки, цифры), на котором обучается ИИ.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <span class="font-bold text-blue-600">Промпт</span>
+                        <p class="text-gray-600 mt-1 text-sm">Текстовый запрос или инструкция, которую пользователь дает ИИ.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <span class="font-bold text-blue-600">Генеративная модель</span>
+                        <p class="text-gray-600 mt-1 text-sm">ИИ, способный создавать новые тексты, картинки или музыку.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таймлайн -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-gray-800 border-b pb-2">Краткая история</h3>
+                <div class="relative border-l-2 border-blue-200 ml-4 space-y-8 pb-4">
+                    <!-- 1950 -->
+                    <div class="relative pl-6">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                        <span class="font-bold text-gray-800">1950</span>
+                        <p class="text-gray-600 mt-1">Алан Тьюринг предложил «тест Тьюринга» для проверки интеллекта машин.</p>
+                    </div>
+                    <!-- 1997 -->
+                    <div class="relative pl-6">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                        <span class="font-bold text-gray-800">1997</span>
+                        <p class="text-gray-600 mt-1">Компьютер Deep Blue победил чемпиона мира по шахматам Гарри Каспарова.</p>
+                    </div>
+                    <!-- 2010-е -->
+                    <div class="relative pl-6">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                        <span class="font-bold text-gray-800">2010-е</span>
+                        <p class="text-gray-600 mt-1">Взрывной рост нейросетей и глубокого обучения.</p>
+                    </div>
+                    <!-- 2020-е -->
+                    <div class="relative pl-6">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                        <span class="font-bold text-gray-800">2020-е</span>
+                        <p class="text-gray-600 mt-1">Появление и массовое распространение генеративных моделей (ChatGPT, Midjourney).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 2: Применение -->
+    <section id="applications" class="py-20 px-4 bg-blue-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center text-gray-800">Применение ИИ в разных сферах</h2>
+            
+            <!-- Карточки -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Медицина -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl mb-4">🩺</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Медицина</h3>
+                    <p class="text-gray-600 text-sm mb-3">Диагностика по снимкам, подбор лечения.</p>
+                    <div class="bg-blue-50 text-blue-800 text-xs p-2 rounded">Пример: ИИ помогает находить признаки болезней на рентгене.</div>
+                </div>
+                <!-- Образование -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Образование</h3>
+                    <p class="text-gray-600 text-sm mb-3">Персонализированные задания, проверка работ.</p>
+                    <div class="bg-blue-50 text-blue-800 text-xs p-2 rounded">Пример: адаптивная платформа подбирает упражнения по уровню ученика.</div>
+                </div>
+                <!-- Транспорт -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl mb-4">🚗</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Транспорт</h3>
+                    <p class="text-gray-600 text-sm mb-3">Беспилотные автомобили, оптимизация маршрутов.</p>
+                    <div class="bg-blue-50 text-blue-800 text-xs p-2 rounded">Пример: навигатор строит маршрут с учётом пробок в реальном времени.</div>
+                </div>
+                <!-- Промышленность -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl mb-4">🏭</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Промышленность</h3>
+                    <p class="text-gray-600 text-sm mb-3">Контроль качества, предсказание поломок.</p>
+                    <div class="bg-blue-50 text-blue-800 text-xs p-2 rounded">Пример: датчики и ИИ заранее предупреждают о неисправности станка.</div>
+                </div>
+                <!-- Творчество -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Творчество</h3>
+                    <p class="text-gray-600 text-sm mb-3">Генерация текстов, картинок, музыки.</p>
+                    <div class="bg-blue-50 text-blue-800 text-xs p-2 rounded">Пример: нейросеть рисует иллюстрацию по описанию.</div>
+                </div>
+            </div>
+
+            <!-- Таблица -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden overflow-x-auto">
+                <table class="w-full text-left border-collapse min-w-[600px]">
+                    <thead>
+                        <tr class="bg-gray-100 text-gray-700">
+                            <th class="p-4 font-semibold border-b">Сфера</th>
+                            <th class="p-4 font-semibold border-b">Задача</th>
+                            <th class="p-4 font-semibold border-b">Пример технологии</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600 text-sm">
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-4 font-medium text-gray-800">Медицина</td>
+                            <td class="p-4">Анализ снимков</td>
+                            <td class="p-4">Компьютерное зрение (CV)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-4 font-medium text-gray-800">Образование</td>
+                            <td class="p-4">Адаптивное обучение</td>
+                            <td class="p-4">Рекомендательные системы</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-4 font-medium text-gray-800">Транспорт</td>
+                            <td class="p-4">Построение маршрута</td>
+                            <td class="p-4">Алгоритмы оптимизации</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-4 font-medium text-gray-800">Промышленность</td>
+                            <td class="p-4">Предиктивное обслуживание</td>
+                            <td class="p-4">Анализ данных с датчиков (IoT)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium text-gray-800">Творчество</td>
+                            <td class="p-4">Создание контента</td>
+                            <td class="p-4">Генеративно-состязательные сети (GAN)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 3: Плюсы и минусы -->
+    <section id="pros-cons" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center text-gray-800">Плюсы и минусы ИИ</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Плюсы -->
+            <div class="bg-green-50 p-8 rounded-2xl border border-green-100">
+                <h3 class="text-2xl font-bold text-green-700 mb-6 flex items-center">
+                    <span class="text-3xl mr-3">👍</span> Плюсы
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700">Ускоряет рутину и обработку больших объёмов данных.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700">Помогает в диагностике и поиске решений там, где нужна точность.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700">Делает сервисы персонализированными (рекомендации, обучение под уровень).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700">Автоматизирует опасные или монотонные задачи.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Минусы -->
+            <div class="bg-red-50 p-8 rounded-2xl border border-red-100">
+                <h3 class="text-2xl font-bold text-red-700 mb-6 flex items-center">
+                    <span class="text-3xl mr-3">⚠️</span> Минусы и риски
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-red-100">
+                        <p class="font-semibold text-gray-800 mb-1">Может ошибаться и «придумывать» факты</p>
+                        <p class="text-sm text-gray-600">Галлюцинации ИИ.</p>
+                        <p class="text-xs text-red-600 mt-2 font-medium">🛡️ Как снизить риск: проверять факты, не доверять слепо выводам ИИ.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-red-100">
+                        <p class="font-semibold text-gray-800 mb-1">Требует больших объёмов данных</p>
+                        <p class="text-sm text-gray-600">Качественные данные — залог работы.</p>
+                        <p class="text-xs text-red-600 mt-2 font-medium">🛡️ Как снизить риск: тщательно проверять и очищать датасеты.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-red-100">
+                        <p class="font-semibold text-gray-800 mb-1">Риски приватности</p>
+                        <p class="text-sm text-gray-600">Неправильное использование персональных данных.</p>
+                        <p class="text-xs text-red-600 mt-2 font-medium">🛡️ Как снизить риск: использовать анонимизацию данных и надежные серверы.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-red-100">
+                        <p class="font-semibold text-gray-800 mb-1">Влияние на рынок труда</p>
+                        <p class="text-sm text-gray-600">Некоторые задачи становятся автоматизированными.</p>
+                        <p class="text-xs text-red-600 mt-2 font-medium">🛡️ Как снизить риск: развивать навыки, которые ИИ пока не может заменить.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center">
+        <p>© 2024 AI Hub. Проект создан для GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
